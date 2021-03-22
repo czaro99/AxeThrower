@@ -1,13 +1,21 @@
 #pragma once
 #include "Entity.h"
+#include "Animation.h"
 class Player :
     public Entity
 {
 private:
+	
 
 public:
+	
+	Animation* animation = nullptr;
+	Animation* walking = nullptr;
+	Animation* throwing = nullptr;
 
-	bool canMove;
+	bool right;
+
+	
 
 	Player(sf::Texture& texture, float x, float y);
 	~Player();

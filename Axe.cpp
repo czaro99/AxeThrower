@@ -26,7 +26,7 @@ void Axe::update(const float& deltaTime)
 {
 	move(direction, deltaTime);
 	sprite.setOrigin(sf::Vector2f(sprite.getTextureRect().width/2, sprite.getTextureRect().height/2));
-	sprite.rotate(8.60);
+	sprite.rotate(8.60*deltaTime*60);
 }
 
 void Axe::render(sf::RenderTarget* target)

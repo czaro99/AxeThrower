@@ -11,11 +11,14 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "Axe.h"
+#include "Animation.h"
 
 
 class Game
 {
 private:
+	
+
 	sf::RenderWindow* window;
 	sf::VideoMode videoMode;
 	sf::Event event;
@@ -25,6 +28,7 @@ private:
 	sf::Texture enemyTexture;
 	sf::Texture axeTexture;
 	sf::Texture backgroundTexture;
+	
 	
 
 	sf::Sprite background;
